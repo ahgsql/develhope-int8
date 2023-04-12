@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-navbar</title>
+    <style>
+      nav {
+        padding: 10px 10px;
+        background-color: #212529;
+        color: rgb(186, 185, 185);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      nav a {
+        text-decoration: none;
+        color: inherit;
+      }
+      nav b,
+      .active {
+        color: white;
+      }
+      nav div {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 20vw;
+      }
+      a[disabled] {
+        color: gray;
+        cursor: not-allowed;
+      }
+      nav input {
+        padding: 10px;
+        border-radius: 6px;
+      }
+      nav button {
+        display: inline-block;
+        padding: 10px 15px;
+        color: #198754;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #212529;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: 2px solid #198754;
+        border-radius: 5px;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      nav button:hover {
+        color: white;
+        background-color: #198754;
+        border: 2px solid #198754;
+        border-radius: 5px;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      @media screen and (max-width: 768px) {
+        a,
+        .d-n-sm {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <b>Navbar</b>
+          <a href="#" class="active">Home</a>
+          <a href="#">Link</a>
+          <a href="#">Dropdown ▼</a>
+          <a href="" disabled>Disabled</a>
+        </div>
+        <div class="d-n-sm">
+          <input type="text" placeholder="Search" /> <button>Search</button>
+        </div>
+        <button class="hamburger" type="button"><=</button>
+      </nav>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+
+:root {
+    --my-color: rgb(39, 251, 141);
+    --bg-color:crimson;
+    --ball-width:500px;
+    --ball-height:500px;
+    --ball-roundness:250px;
+    --ball-margin:20px;
+  }
+
+body {
+    background-color: var(--bg-color);
+}
+
+.ball {
+    margin: var(--ball-margin);
+    width: var(--ball-width);
+    height: var(--ball-height);
+    background-color: var(--my-color);
+    border-radius: var(--ball-roundness);
+}
