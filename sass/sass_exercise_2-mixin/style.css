@@ -1,0 +1,40 @@
+div {
+  padding: 15px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+div h1 {
+  color: green;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: blue;
+  text-decoration-thickness: 1px;
+}
+div section {
+  display: flex;
+  flex: 1;
+}
+div section article {
+  padding: 20px;
+  border: 1px solid green;
+  text-align: center;
+  color: red;
+}
+div section article:nth-child(2n+1) {
+  color: blue;
+}
+div section:nth-of-type(2) {
+  width: 100%;
+}
+div section:nth-of-type(2) article {
+  width: 100%;
+  color: green;
+  border-color: blue;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

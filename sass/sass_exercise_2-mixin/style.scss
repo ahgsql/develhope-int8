@@ -1,0 +1,44 @@
+$color-red : red;
+$color-blue : blue;
+$color-green : green;
+
+div {
+    padding: 15px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;  
+    h1 {
+        color: $color-green;
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: $color-blue;
+        text-decoration-thickness: 1px;
+  
+    }
+    section {
+        display: flex;
+        flex:1;
+        article {
+            padding: 20px;
+            border: 1px solid $color-green;
+            text-align: center;
+            color: $color-red;
+
+            &:nth-child(2n+1) {
+                color: $color-blue;
+            }
+        }
+    }
+    section:nth-of-type(2)  {
+        width: 100%;
+       article {
+        width: 100%;
+        color: $color-green;
+        border-color: $color-blue;
+        font-size: 1rem;
+      }
+    }
+}
