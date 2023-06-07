@@ -28,7 +28,6 @@
     return label;
   }
 
-  let labels = [...document.getElementsByTagName("label")];
   let inputs = [...document.getElementsByClassName("form-input")];
   for (let i = 0; i < inputs.length; i++) {
     console.log(`${closestLabel(inputs[i]).innerText} : ${inputs[i].value}`);
