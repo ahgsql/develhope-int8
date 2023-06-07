@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+      ul {
+        list-style: none;
+      }
+      ul li {
+        background-color: rgb(255, 123, 150);
+        padding: 5px;
+        border-radius: 3px;
+        margin: 4px;
+      }
+      ul li.done {
+        background-color: rgb(160, 255, 123);
+      }
+      ul li:before {
+        content: "x";
+      }
+      ul li.done:before {
+        content: "✓";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" style="display: flex; align-items: center">
+      <ul class="todo-list">
+        Loading
+      </ul>
+    </div>
+  </body>
+</html>
+
+<script>
+  // code here
+  var todoHolder = document.getElementsByClassName("todo-list")[0];
+
+  (async () => {
+    let res = await fetch("https://jsonplaceholder.typicode.com/todos");
+    let json = await res.json();
+    todoHolder.innerHTML = "";
+    json.forEach(function (todo) {
+      let li = `<li class="${
+        todo.completed ? "done" : ""
+      }"> ${todo.title.toUpperCase()}</li>`;
+      todoHolder.innerHTML += li;
+    });
+  })();
+</script>
