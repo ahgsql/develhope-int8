@@ -38,6 +38,42 @@ h1 {
   line-height: 1.1;
 }
 
+input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin-right: 5px;
+  font-size: 1em;
+  background-color:#213547 ;
+  color: #e5e5e5;
+}
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+  background-color: #213547;
+  color: floralwhite;
+  padding:5px;
+  border-radius: 10px;
+  margin:5px;
+  display: flex;
+  justify-content: space-between
+}
+
+li:before {
+  content: "🔔";
+  padding-left: 15px;
+}
+.smallbtn{
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+  font-weight: 500;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;

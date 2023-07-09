@@ -1,6 +1,6 @@
 import UncontrolledLogin from "./components/UncontrolledLogin";
 
-function App() {
+function App() { 
   const loginOnSubmit = (data) => {
     console.log("On Login Called. Data Was: ", data);
   };
